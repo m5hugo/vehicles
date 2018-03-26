@@ -8,6 +8,10 @@ public class Vehicle {
 	private int portes;
 	private int velocitat_actual;
 	
+	public Vehicle(){
+		this.velocitat_actual = 0;
+	}
+	
 	public void accelerar(){		
 		this.velocitat_actual += 10;	
 	}
