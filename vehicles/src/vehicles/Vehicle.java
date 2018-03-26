@@ -9,7 +9,11 @@ public class Vehicle {
 	private int velocitat_actual;
 	
 	public void accelerar(){		
-		this.velocitat_actual += 10;	
+		if (this.velocitat_actual < velocitat_maxima) this.velocitat_actual += 10;	
+	}
+
+	public void desaccelerar(){		
+		if (this.velocitat_actual > 0) this.velocitat_actual -= 10;	
 	}
 	
 	public double getCilindrada() {
